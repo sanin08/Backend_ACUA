@@ -21,7 +21,6 @@ from arbol import views
 
 router = routers.DefaultRouter()
 router.register(r'arboles', views.FormularioViewSet)
-router.register(r'arboles1', views.ArbolViewSet)
 urlpatterns = [
      url(r'^', include(router.urls)),
     path('admin/', admin.site.urls),
