@@ -25,7 +25,7 @@ SECRET_KEY = 'iej40ge_v0%^43sjwf7i9kb807n%9f4)n2nco@*3_9u4d#_1se'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'arbol',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +77,12 @@ WSGI_APPLICATION = 'BACUA.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db-jssaninv',                     
+        'USER': 'jssaninv@pi1-eafit-db-jssaninv',                     
+        'PASSWORD': 'zeus123*',                  
+        'HOST': 'pi1-eafit-db-jssaninv.mysql.database.azure.com',                     
+        'PORT': '3306',
     }
 }
 
