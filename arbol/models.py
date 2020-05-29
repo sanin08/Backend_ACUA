@@ -5,6 +5,7 @@ class Arbol(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     type = models.CharField(verbose_name='Tipo', max_length=20)
     carac = models.CharField(verbose_name='caracteristica', max_length=200)
+    cupo = models.IntegerField(verbose_name='Cupo')
     direction = models.CharField(verbose_name='direccion', max_length=200)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

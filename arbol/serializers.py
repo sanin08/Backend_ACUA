@@ -7,7 +7,7 @@ from .models import Tarea
 class ArbolSerializer(serializers.ModelSerializer):
     class Meta:
         model = Arbol
-        fields = ('id', 'type', 'carac','direction')
+        fields = ('id', 'type', 'carac','direction','cupo')
 
 class FormularioSerializer(serializers.ModelSerializer):
     class Meta:
