@@ -12,7 +12,7 @@ class ArbolSerializer(serializers.ModelSerializer):
 class FormularioSerializer(serializers.ModelSerializer):
     class Meta:
         model= Formulario
-        fields= ('id','value','pregunta1','pregunta2','pregunta3','altitud','latitud')
+        fields= ('id','pregunta1','pregunta2','pregunta3','altitud','latitud')
 
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:

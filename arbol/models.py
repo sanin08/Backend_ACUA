@@ -11,7 +11,6 @@ class Arbol(models.Model):
 
 class Formulario(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    value = models.IntegerField(verbose_name='Valor')
     pregunta1 = models.CharField(verbose_name='Pregunta1', max_length=200)
     pregunta2 = models.CharField(verbose_name='Pregunta2', max_length=200)
     pregunta3 = models.CharField(verbose_name='Pregunta3', max_length=200)
