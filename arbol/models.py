@@ -15,8 +15,8 @@ class Formulario(models.Model):
     pregunta1 = models.CharField(verbose_name='Pregunta1', max_length=200)
     pregunta2 = models.CharField(verbose_name='Pregunta2', max_length=200)
     pregunta3 = models.CharField(verbose_name='Pregunta3', max_length=200)
-    altitud = models.IntegerField(verbose_name='Altitud')
-    latitud = models.IntegerField(verbose_name='Latitud')
+    altitud = models.FloatField(verbose_name='Altitud')
+    latitud = models.FloatField(verbose_name='Latitud')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

@@ -20,8 +20,8 @@ from rest_framework import routers
 from arbol import views
 
 router = routers.DefaultRouter()
-router.register(r'arboles', views.FormularioViewSet)
-router.register(r'arboles1', views.ArbolViewSet)
+router.register(r'formularios', views.FormularioViewSet)
+router.register(r'eventos', views.ArbolViewSet)
 urlpatterns = [
      url(r'^', include(router.urls)),
     path('admin/', admin.site.urls),
