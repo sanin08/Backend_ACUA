@@ -20,7 +20,7 @@ from rest_framework import routers
 from arbol import views
 
 router = routers.DefaultRouter()
-router.register(r'formularios', views.FormularioViewSet)
+router.register(r'formularioss', views.FormularioViewSet)
 router.register(r'eventos', views.ArbolViewSet)
 urlpatterns = [
      url(r'^', include(router.urls)),
